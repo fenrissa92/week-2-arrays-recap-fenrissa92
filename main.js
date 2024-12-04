@@ -68,9 +68,64 @@ while (i < arr.length) {
 }
   */
 
-while (index ==> englishNumbers.length) {
+/*
+i was struggling with this one for SOOO LONG! i got this completely wrong and didn't get that if i assigned index to zero, the index HAS TO BE smaller than lenght, otherwise, function will NEVER run.
+
+while (index > englishNumbers.length) {
+    console.log(englishNumbers[index]);
+    index++;
+  }
+*/
+
+while (index < englishNumbers.length) {
     console.log(englishNumbers[index]);
     index++;
   }
 
+/*
+## Task 4 - Looping and Accessing
 
+👉 Refactor task three to use a for loop instead of a while loop.
+*/
+
+
+for (let index = 0; index < englishNumbers.length; index++) {
+  console.log(englishNumbers[index]);
+}
+
+/*
+## Task 5 - Looping and Reassigning
+
+```js
+let words = ["ben", "ha", "spla", "fa", "ca", "dra"];
+// for loop goes here
+
+console.log(words);
+```
+👉 Use a for loop to iterate over the words array and add the letter t to the end of each word ("ben" becomes "bent", "ha" becomes "hat", etc.).
+*/
+
+/*
+ATTEMPTS
+
+let words = ["ben", "ha", "spla", "fa", "ca", "dra"];
+// for loop goes here
+
+for (index = 0; index < words.length; + "t") {
+
+words + "t"
+
+  console.log(words[index]);
+}
+*/
+
+
+let words = ["ben", "ha", "spla", "fa", "ca", "dra"];
+// for loop goes here
+
+
+for(let i = 0; i < words.length; i++) {
+  words[i] = words[i] + "t";
+
+console.log(words[i]);
+}
